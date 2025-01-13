@@ -6,6 +6,9 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Roboto", sans-serif;
   font-size: 1.5rem;
@@ -17,6 +20,7 @@ body {
   width: 75vw;
   height: 85vh;
   margin: 40px auto;
+  position: relative;
 }
 
 .inner-container {
@@ -24,6 +28,7 @@ body {
   width: 40vw;
   height: 50vh;
   margin: 200px auto;
+  position: relative;
 }
 
 .box {
@@ -31,4 +36,80 @@ body {
   height: 150px;
   color: #fff;
   padding: 1rem;
+}
+
+.absolute {
+  background-color: #00f;
+  position: absolute;
+  top: 0;
+  left: 0;
+  left: -10000px;
+  z-index: 1;
+}
+
+.relative {
+  background-color: red;
+  position: relative;
+  top: 100px;
+  left: 100px;
+}
+
+.fixed {
+  background-color: green;
+  position: fixed;
+}
+
+.sticky {
+  background-color: #000;
+  position: sticky;
+  top: 300px;
+}
+
+section {
+  height: 100vh;
+}
+
+.blue {
+  background-color: #00f;
+}
+.red {
+  background-color: red;
+}
+.green {
+  background-color: green;
+}
+
+header,
+footer {
+  color: white;
+  text-align: center;
+  height: 100px;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  font-size: 5rem;
+}
+
+footer {
+  background-color: #000;
+  position: sticky;
+  bottom: 0;
+  font-size: 3rem;
+}
+
+a:visited {
+  color: white;
+}
+
+.social {
+  background-color: royalblue;
+  color: white;
+  font-size: inherit;
+  padding: 1rem;
+  position: fixed;
+  top: 30%;
+  left: 0;
+  z-index: 1;
 }
